@@ -1,0 +1,12 @@
+{
+    "ID": "E6AC0CD2BDD84AFE9E7D4BBCDEB0BF11",
+    "ActionKeyword": "h",
+    "Name": "WSL History",
+    "Description": "Search and cast your Plex Media Library",
+    "Author": "Garulf",
+    "Version": "0.0.0",
+    "Language": "python",
+    "Website": "https://github.com/Garulf/wsl_history",
+    "IcoPath": "./icon.png",
+    "ExecuteFileName": "run.py"
+}
