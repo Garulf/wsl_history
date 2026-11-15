@@ -2,7 +2,7 @@
   "ID": "E6AC0CD2BDD84AFE9E7D4BBCDEB0BF11",
   "ActionKeyword": "h",
   "Name": "WSL History",
-  "Description": "Search and cast your Plex Media Library",
+  "Description": "Search your WSL bash history and run a command again",
   "Author": "Garulf",
   "Version": "0.0.0",
   "Language": "python_v2",
