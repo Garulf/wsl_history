@@ -1,0 +1,47 @@
+{% extends "base.md.j2" %}
+
+{% block usage %}
+## Usage
+
+Type `h` followed by part of a command you ran in WSL:
+
+```
+h git
+```
+
+{{ screenshot("search", alt="WSL History results in Flow Launcher") }}
+
+Every line of `~/.bash_history` in your default WSL distribution that contains the text is listed,
+oldest first, with its line number underneath. Type just `h` to list the whole history.
+
+Press `Enter` to run the command again. It opens in a new Windows Terminal tab when Windows Terminal
+is installed, or in a `cmd` window otherwise, and leaves an interactive bash shell open afterwards.
+
+## Installation
+
+Download `wsl_history-<version>.zip` from the [latest release]({{ project.url }}/releases/latest) and unzip it into
+`%appdata%\FlowLauncher\Plugins`, then restart Flow Launcher.
+
+Pre-releases of the next version are published from the open release PR on the
+[releases page]({{ project.url }}/releases) for testing. Flow Launcher won't offer them as updates.
+
+## Requirements
+
+* Windows with WSL and a default distribution that uses bash
+* Flow Launcher 1.17.0 or newer
+* Python 3.8 or newer, which Flow Launcher can install for you
+* [Windows Terminal](https://aka.ms/terminal) (optional)
+
+{% if changelog(3) %}
+## Changelog
+
+{{ changelog(3) }}
+
+See [CHANGELOG.md](CHANGELOG.md) for the full history.
+{% endif %}
+{% endblock %}
+
+{% block screenshots %}{% endblock %}
+{% block install %}{% endblock %}
+{% block contributing %}{% endblock %}
+{% block license %}{% endblock %}

@@ -1,0 +1,27 @@
+{
+  "keyword": "h",
+  "query": "git",
+  "icon": "../../data/icon.png",
+  "max_results": 4,
+  "selection": 0,
+  "results": [
+    {
+      "title": "git status",
+      "subtitle": "212"
+    },
+    {
+      "title": "git log --oneline -5",
+      "subtitle": "215"
+    },
+    {
+      "title": "git pull --rebase",
+      "subtitle": "231"
+    },
+    {
+      "title": "git switch -c fix/typo",
+      "subtitle": "240"
+    }
+  ],
+  "query_suggestion": "",
+  "show_caret": false
+}

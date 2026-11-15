@@ -1,0 +1,27 @@
+{
+  "keyword": "h",
+  "query": "make",
+  "icon": "../../data/icon.png",
+  "max_results": 4,
+  "selection": 0,
+  "results": [
+    {
+      "title": "make test",
+      "subtitle": "118"
+    },
+    {
+      "title": "make build",
+      "subtitle": "124"
+    },
+    {
+      "title": "make clean",
+      "subtitle": "130"
+    },
+    {
+      "title": "make lint",
+      "subtitle": "147"
+    }
+  ],
+  "query_suggestion": "",
+  "show_caret": true
+}
