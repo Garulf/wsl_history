@@ -25,7 +25,8 @@ class WslHistory:
 
     def history(self) -> List[str]:
         stdout = self._shell.output([BASH_EXE, "-c", "cat ~/.bash_history"])
-        return str(stdout).split("\\n")
+        lines = stdout.decode("utf-8", errors="replace").splitlines()
+        return [line for line in lines if line.strip()]
 
     def run(self, command: str) -> None:
         terminal = self.windows_terminal()

@@ -25,6 +25,15 @@ def test_query_filters_history_by_substring(wsl):
     assert titles(response) == ["git status"]
 
 
+def test_empty_query_lists_every_entry(wsl):
+    assert titles(run_method("query", "")) == ["ls -la", "cd projects", "git status", "make test"]
+
+
+def test_history_is_decoded_and_blank_lines_skipped():
+    shell = FakeShell(history="echo 'café'\n\n  \r\nls\r\n".encode("utf-8"))
+    assert WslHistory(shell, {}).history() == ["echo 'café'", "ls"]
+
+
 def test_result_runs_the_command(wsl):
     (result,) = run_method("query", "make")["Result"]
     assert result["SubTitle"] == "3"
