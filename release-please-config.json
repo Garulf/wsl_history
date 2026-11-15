@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "release-type": "simple",
+  "include-component-in-tag": false,
+  "always-update": true,
+  "bootstrap-sha": "05e2b2b7f960b0aa491ef4852944f125ecb2b27c",
+  "packages": {
+    ".": {
+      "package-name": "wsl_history",
+      "extra-files": [
+        {
+          "type": "json",
+          "path": "data/plugin.json",
+          "jsonpath": "$.Version"
+        }
+      ]
+    }
+  }
+}
